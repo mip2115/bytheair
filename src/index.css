@@ -1,13 +1,32 @@
+@font-face {font-family: "Uber Move Text";
+    src: url("http://db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.svg#Uber Move Text") format("svg"); /* iOS 4.1- */
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Uber Move Text", Fallback, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Uber Move Text", Fallback, sans-serif;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: "Uber Move Text", Fallback, sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: "Uber Move Text", Fallback, sans-serif;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: "Uber Move Text", Fallback, sans-serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: "Uber Move Text", Fallback, sans-serif;
 }

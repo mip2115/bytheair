@@ -16,10 +16,13 @@ const NavbarSignedIn = (props) => {
           <img src={menuIcon} />
         </div>
         <div className="navbar-tabs-tab">
-          <a href="#home-info">About</a>
+          <a href="#how-it-works">How it works</a>
         </div>
         <div className="navbar-tabs-tab">
-          <a href="mailto:sales@bytheair.com">Contact</a>
+          <a href="#request-demo">Request demo</a>
+        </div>
+        <div className="navbar-tabs-login">
+          <a href="/login">Dispensary login</a>
         </div>
         {/* <div className="navbar-tabs-tab">Sign Up</div> */}
         {/* <div className="navbar-tabs-tab">Logout</div>

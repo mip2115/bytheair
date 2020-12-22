@@ -12,9 +12,10 @@
     padding: 15px 40px;
     border-radius: 40px;
     margin-top: 30px;
-    font-size: 20px;
-    background-color: $theme-secondary;
-    color: $theme-primary;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: $theme-primary;
+    color: $theme-secondary;
     cursor: pointer;
     transition: 0.2s ease;
 
@@ -28,6 +29,15 @@
       background-color: $theme-secondary;
       color: $theme-primary;
     }
+  }
+
+  &-email-address {
+    font-weight: bold;
+    color: $theme-primary;
+  }
+
+  &-header {
+    font-weight: bold !important;
   }
 
   &-cards {
@@ -71,7 +81,8 @@
   }
 
   &-icon-ctr {
-    border: solid $theme-primary 1px;
+    border: solid $theme-primary 10px;
+    box-shadow: 0 0 0 4px $theme-tertiary;
     height: 100px;
     width: 100px;
     border-radius: 50px;

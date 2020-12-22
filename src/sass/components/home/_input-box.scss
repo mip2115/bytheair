@@ -1,7 +1,7 @@
 .input-box {
   position: absolute;
   left: 50%;
-  top: 80%;
+  top: 90%;
   transform: translate(-50%, -80%);
   display: flex;
   flex-direction: column;
@@ -9,12 +9,11 @@
   align-items: center;
 
   &-header {
-    font-size: 40px;
-    letter-spacing: 2px;
+    font-size: 36px;
     text-align: center;
-    font-weight: 100;
+    font-weight: 600;
     color: $theme-secondary;
-    margin-bottom: 10px;
+    margin-bottom: 48px;
   }
   input {
     font-size: 16px;

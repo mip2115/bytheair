@@ -20,7 +20,7 @@ const InfoCard = (props) => {
 const HomeInfo = (props) => {
   return (
     <div className="home-info" id="home-info">
-      <h3>How it works</h3>
+      <h3 id="how-it-works" className="home-info-header">How it works</h3>
       <div className="home-info-cards">
         <InfoCard
           icon={homeLogo}
@@ -38,13 +38,13 @@ const HomeInfo = (props) => {
           text="You'll be notified as soon as a drone arrives with your order.  Enjoy!"
         />
       </div>
-      <h3>Request a demo</h3>
+      <h3 id="request-demo" className="home-info-header">Request a demo</h3>
       <p>
-        To request a free demo of our system for your dipensary, please email us
-        at sales@bytheair.com
+        To request a free demo of our system for your dispensary, please email us
+        at <a className="home-info-email-address">sales@bytheair.com</a>.
       </p>
-      <div className="home-info-demo">
-        <a href="mailto:sales@bytheair.com">Request a demo</a>
+      <div className="home-info-demo" onClick={() => {window.location.href='mailto:sales@bytheair.com'}}>
+        <a href="mailto:sales@bytheair.com">Request demo</a>
       </div>
     </div>
   );
