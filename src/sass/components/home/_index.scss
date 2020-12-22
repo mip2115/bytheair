@@ -1,0 +1,29 @@
+@import "./input-box.scss";
+@import "./home-info.scss";
+
+.home {
+  //   display: flex;
+  //   flex-direction: column;
+  position: relative;
+
+  //   background-image: url("../../../assets/bad/background-2.png");
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+}
+
+.welcome-header {
+  height: 600px; // 100% of the parent
+
+  position: relative;
+
+  background-image: url("../../../assets/bad/background-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+@media (max-width: $mobile) {
+  .welcome-header {
+    height: 400px;
+  }
+}

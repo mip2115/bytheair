@@ -1,0 +1,16 @@
+.footer {
+  height: 125px;
+  border: solid;
+  background-color: $theme-primary;
+  color: $theme-secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: $mobile) {
+  .footer {
+    font-size: 14px;
+  }
+}

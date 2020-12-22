@@ -1,0 +1,47 @@
+.input-box {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-header {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 100;
+    color: $theme-secondary;
+    margin-bottom: 10px;
+  }
+  input {
+    font-size: 16px;
+    padding: 15px 25px;
+    width: 570px;
+    border-radius: 40px;
+    border: none;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .input-box {
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+    &-header {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+    & input {
+      width: 275px;
+    }
+  }
+}

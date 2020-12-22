@@ -1,0 +1,129 @@
+.home-info {
+  padding: 0 100px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-demo {
+    border: solid 1px;
+    padding: 15px 40px;
+    border-radius: 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: $theme-secondary;
+    color: $theme-primary;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    a {
+      outline: none;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &:hover {
+      background-color: $theme-secondary;
+      color: $theme-primary;
+    }
+  }
+
+  &-cards {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  & h3 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  & p {
+    margin-top: 40px;
+    width: 500px;
+    text-align: center;
+  }
+}
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+
+  &-label {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &-text {
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+  }
+
+  &-icon-ctr {
+    border: solid $theme-primary 1px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .info-card {
+    height: 170px;
+
+    &-label {
+      font-size: 16px;
+    }
+    &-text {
+      display: none;
+    }
+    &-icon-ctr {
+      border: none;
+      height: 70px;
+      width: 70px;
+      border-radius: 35px;
+    }
+  }
+  .home-info {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 60px;
+
+    &-demo {
+      //   margin-bottom: 0;
+      width: 275px;
+      text-align: center;
+    }
+
+    &-cards {
+      flex-direction: column;
+      margin-bottom: 20px;
+      // align-items: center;
+      // justify-content: space-around;
+    }
+
+    & p {
+      width: 250px;
+      margin-top: 80px;
+    }
+  }
+  .welcome-header {
+  }
+}
